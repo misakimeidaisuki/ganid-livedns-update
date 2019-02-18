@@ -10,7 +10,7 @@ from live_dns import liveDNS
 
 if __name__ == "__main__":
     logger = updateLog()
-    config = configLoader(logger, filename = "nuko.moe.conf")
+    config = configLoader(logger)
 
     ip_finder = IPFinder(config, logger)
     try:
